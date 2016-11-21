@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bfblog.GitHub.io by BloomingFlowers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Bfblog.GitHub.io</h1>
+      <h2 class="project-tagline">循环无限输入+冒泡排序</h2>
+      <a href="https://github.com/BloomingFlowers/BFBlog.github.io" class="btn">View on GitHub</a>
+      <a href="https://github.com/BloomingFlowers/BFBlog.github.io/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/BloomingFlowers/BFBlog.github.io/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h3>
+<a id="bfbloggithubio" class="anchor" href="#bfbloggithubio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BFBlog.github.io</h3>
+
+<h3>
+<a id="include" class="anchor" href="#include" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>#include</h3>
+
+<h3>
+<a id="include-1" class="anchor" href="#include-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>#include</h3>
+
+<h3>
+<a id="include-2" class="anchor" href="#include-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>#include</h3>
+
+<h3>
+<a id="const-size_t-len--256" class="anchor" href="#const-size_t-len--256" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>const size_t len = 256;</h3>
+
+<h3>
+<a id="const-size_t-plen--256" class="anchor" href="#const-size_t-plen--256" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>const size_t plen = 256;</h3>
+
+<h3>
+<a id="int-main" class="anchor" href="#int-main" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>int main()</h3>
+
+<h3>
+<a id="" class="anchor" href="#" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>{</h3>
+
+<h3>
+<a id="int-i--0" class="anchor" href="#int-i--0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>int i = 0;</h3>
+
+<h3>
+<a id="char-bufferlen--null" class="anchor" href="#char-bufferlen--null" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>char buffer[len] = {NULL};</h3>
+
+<h3>
+<a id="char-psplen--null" class="anchor" href="#char-psplen--null" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>char *ps[plen] = {NULL};</h3>
+
+<h3>
+<a id="char-pp--buffer" class="anchor" href="#char-pp--buffer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>char *pp = buffer;</h3>
+
+<h3>
+<a id="char-temp--null" class="anchor" href="#char-temp--null" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>char *temp = NULL;</h3>
+
+<h3>
+<a id="fori--leni" class="anchor" href="#fori--leni" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>for(;i &lt; len;i++)</h3>
+
+<h3>
+<a id="-1" class="anchor" href="#-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>{</h3>
+
+<h3>
+<a id="pp--buffer" class="anchor" href="#pp--buffer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>pp = buffer;</h3>
+
+<h3>
+<a id="whilepp---buffer--len-1ppgetcharn" class="anchor" href="#whilepp---buffer--len-1ppgetcharn" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>while((pp - buffer &lt; len-1)&amp;&amp;(*pp++=getchar())!='\n')</h3>
+
+<h3>
+<a id="ifpp-buffer--lenpp-1n" class="anchor" href="#ifpp-buffer--lenpp-1n" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>if(pp-buffer == len&amp;&amp;*(pp-1)!='\n')</h3>
+
+<h3>
+<a id="-2" class="anchor" href="#-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>{</h3>
+
+<h3>
+<a id="printfrun-out-of-memory" class="anchor" href="#printfrun-out-of-memory" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>printf("run out of memory!");</h3>
+
+<h3>
+<a id="return-1" class="anchor" href="#return-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>return 1;</h3>
+
+<h3>
+<a id="-3" class="anchor" href="#-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>}</h3>
+
+<h3>
+<a id="ifpp---buffer--2" class="anchor" href="#ifpp---buffer--2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>if(pp - buffer &lt; 2)</h3>
+
+<h3>
+<a id="break" class="anchor" href="#break" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>break;</h3>
+
+<h3>
+<a id="pp---1---0" class="anchor" href="#pp---1---0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>*(pp - 1)  = '\0';</h3>
+
+<h3>
+<a id="psi--charmallocpp---buffer" class="anchor" href="#psi--charmallocpp---buffer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ps[i] = (char*)malloc(pp - buffer);</h3>
+
+<h3>
+<a id="ifpsinull" class="anchor" href="#ifpsinull" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>if(ps[i]==NULL)</h3>
+
+<h3>
+<a id="-4" class="anchor" href="#-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>{</h3>
+
+<h3>
+<a id="printferror" class="anchor" href="#printferror" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>printf("error!");</h3>
+
+<h3>
+<a id="return-1-1" class="anchor" href="#return-1-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>return 1;</h3>
+
+<h3>
+<a id="-5" class="anchor" href="#-5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>}</h3>
+
+<h3>
+<a id="strcpypsibuffer" class="anchor" href="#strcpypsibuffer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>strcpy(ps[i],buffer);</h3>
+
+<h3>
+<a id="-6" class="anchor" href="#-6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>}</h3>
+
+<h3>
+<a id="bool-sort--false" class="anchor" href="#bool-sort--false" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>bool sort = false;</h3>
+
+<h3>
+<a id="int-a--0" class="anchor" href="#int-a--0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>int a = 0;</h3>
+
+<h3>
+<a id="whilesort" class="anchor" href="#whilesort" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>while(!sort)</h3>
+
+<h3>
+<a id="-7" class="anchor" href="#-7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>{</h3>
+
+<h3>
+<a id="sort--true" class="anchor" href="#sort--true" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>sort = true;</h3>
+
+<h3></h3>
+
+<h3>
+<a id="fora0-a--i-1a" class="anchor" href="#fora0-a--i-1a" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>for(a=0; a &lt; i-1;a++)</h3>
+
+<h3>
+<a id="---ifstrlenpsa--strlenpsa1" class="anchor" href="#---ifstrlenpsa--strlenpsa1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>{   if(strlen(ps[a]) &gt; strlen(ps[a+1]))</h3>
+
+<h3>
+<a id="-9" class="anchor" href="#-9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>{</h3>
+
+<h3>
+<a id="sort--false" class="anchor" href="#sort--false" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>sort = false;</h3>
+
+<h3>
+<a id="temp--psa" class="anchor" href="#temp--psa" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>temp = ps[a];</h3>
+
+<h3>
+<a id="psa--psa1" class="anchor" href="#psa--psa1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ps[a] = ps[a+1];</h3>
+
+<h3>
+<a id="psa1--temp" class="anchor" href="#psa1--temp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ps[a+1] = temp;</h3>
+
+<h3></h3>
+
+<h3>
+<a id="-11" class="anchor" href="#-11" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>}</h3>
+
+<h3>
+<a id="-12" class="anchor" href="#-12" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>}</h3>
+
+<h3></h3>
+
+<h3>
+<a id="-14" class="anchor" href="#-14" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>}</h3>
+
+<h3>
+<a id="fora--0-a--i-a" class="anchor" href="#fora--0-a--i-a" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>for(a = 0; a &lt; i; a++)</h3>
+
+<h3>
+<a id="-15" class="anchor" href="#-15" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>{</h3>
+
+<h3>
+<a id="printfnspsa" class="anchor" href="#printfnspsa" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>printf("\n%s",ps[a]);</h3>
+
+<h3>
+<a id="freepsa" class="anchor" href="#freepsa" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>free(ps[a]);</h3>
+
+<h3>
+<a id="-16" class="anchor" href="#-16" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>}</h3>
+
+<h3>
+<a id="return-0" class="anchor" href="#return-0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>return 0;</h3>
+
+<h3>
+<a id="-17" class="anchor" href="#-17" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>}</h3>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/BloomingFlowers/BFBlog.github.io">Bfblog.GitHub.io</a> is maintained by <a href="https://github.com/BloomingFlowers">BloomingFlowers</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
